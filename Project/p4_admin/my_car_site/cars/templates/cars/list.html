@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="container">
+    <h1>List</h1>
+    <ul>
+        {% for car in all_cars %}
+        <li>{{car}}</li>
+        {% comment %} <li>{{ car.make }} {{ car.model }}</li> {% endcomment %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+{% endblock%}
