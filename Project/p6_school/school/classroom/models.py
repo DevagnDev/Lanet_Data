@@ -11,16 +11,3 @@ class Teacher(models.Model):
         # return {"name": self.first_name, "subject": self.subject}
 
 
-    # def teacher_detail(request, id):
-    # # Retrieve the teacher or return a 404 error if not found
-    # teacher = get_object_or_404(Teacher, id=id)
-    # # Build a dictionary with the teacher's information
-    # data = {
-    #     "first_name": teacher.first_name,
-    #     "last_name": teacher.last_name,
-    #     "subject": teacher.subject,
-    #     # Optionally include the string representation if needed:
-    #     "description": str(teacher),
-    # }
-    # # Return the data as a JSON response
-    # return JsonResponse(data)

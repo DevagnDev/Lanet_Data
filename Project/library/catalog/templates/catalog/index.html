@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Product</title>
+</head>
+
+<body>
+    <h1>Product catalog</h1>
+    
+    <p>Total Books:{{num_books}}</p>
+    {% comment %} <p>Test:{{test_num}}</p> {% endcomment %}
+    {% if user.is_authenticated %}
+        <p>You are Logged in </p>
+        <p>Welcome : {{user.get_username}}</p>
+    {% else %}
+        <p>You are not Logged in </p>
+    {% endif %}
+</body>
+</html>
