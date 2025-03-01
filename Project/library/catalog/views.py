@@ -7,11 +7,9 @@ def index(request):
     # test_num=Book.objects.all()
     num_books=Book.objects.all().count()
     num_instances=BookInstance.objects.all().count()
-   
+    
     num_instances_avail=BookInstance.objects.filter(status__exact='a').count()
-
-
-
+    
     context={
         # 'test_num':test_num,
         'num_books':num_books,
